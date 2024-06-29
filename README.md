@@ -8,14 +8,10 @@ This sample shows how to deploy the Ollama API with gemma:2b on Cloud Run, to ru
 
 ## Usage
 
-To build the container with `gemma:2b` included and deploy the Ollama API to a publicly accessible URL on Cloud Run, use the following command from this directory:
+To build the container with `gemma:2b` included and deploy the Ollama API to a publicly accessible URL on Cloud Run, use the following command from the directory ./run/ollama-gemma:
 
 ```
-gcloud run deploy \
-  --cpu=8 \
-  --memory=8Gi \
-  --execution-environment=gen2 \
-  --allow-unauthenticated
+bash deploy.sh
 ```
 
 Respond to any prompts the command gives you. You might need to enable a few APIs
