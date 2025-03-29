@@ -33,7 +33,7 @@ wait_for_ollama
 echo "ollama serve is now listening on port 8080"
 
 # Run ollama pull
-ollama pull gemma:2b
+ollama pull gemma3:4b
 
 # Indicate successful completion
-echo "ollama pull gemma:2b completed"
+echo "ollama pull gemma3:4b completed"

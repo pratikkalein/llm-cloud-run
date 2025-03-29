@@ -1,14 +1,14 @@
 # Run Gemma with Ollama on Cloud Run
 
-This sample shows how to deploy the Ollama API with gemma:2b on Cloud Run, to run inference using CPU only.
+This sample shows how to deploy the Ollama API with gemma3:4b on Cloud Run, to run inference using CPU only.
 
-**Gemma** is Google's open model built from the same research and technology used to create the Gemini models. The 2B version is the smallest version.
+**Gemma** is Google's open model built from the same research and technology used to create the Gemini models.
 
 **Ollama** is a framework that makes it easy for developers to prototype apps with open models, including gemma. It comes with a REST API and this sample deploys that API with a Cloud Run service.
 
 ## Usage
 
-To build the container with `gemma:2b` included and deploy the Ollama API to a publicly accessible URL on Cloud Run, use the following command from the directory ./run/ollama-gemma:
+To build the container with `gemma3:4b` included and deploy the Ollama API to a publicly accessible URL on Cloud Run, use the following command from the directory ./run/ollama-gemma:
 
 ```
 bash deploy.sh
@@ -38,7 +38,7 @@ Ask Gemma a question:
 ```
 curl $URL/api/generate -d \
  '{
-    "model": "gemma:2b",
+    "model": "gemma3:4b",
     "prompt": "Why is the sky blue?"
   }'
 ```
